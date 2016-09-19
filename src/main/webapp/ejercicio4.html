@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body bgcolor="#6A0005">
+        <form action="mailto:telepizza@gmail.com" method="POST">
+            <table border="0" width="30%" bgcolor="#FECEA3">
+                <thead>
+                    <tr>
+                        <th colspan="3" bgcolor="#FF662A" align="center"><i><font color="#D1411B">- Pedido de Pizza -</font></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr align="center">
+                        <td bgcolor="#9E3114"><font color="white">Nombre</font></td>
+                        <td colspan="2"><input type="text" name="nombre" value="" /></td>
+                    </tr>
+                    <tr align="center">
+                        <td bgcolor="#9E3114"><font color="white">Direccion</font></td>
+                        <td colspan="2"><input type="text" name="direccion" value="" /></td>
+                        <td></td>
+                    </tr>
+                    <tr align="center">
+                        <td bgcolor="#9E3114"><font color="white" >Ingredientes</font></td>
+                        <td bgcolor="#9E3114"><font color="white">Tamaño</font></td>
+                        <td bgcolor="#9E3114"><font color="white">Forma de pago</font></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="queso" value="ON" />Queso<br>
+                            <input type="checkbox" name="pimiento" value="ON" />Pimiento<br>
+                            <input type="checkbox" name="cebolla" value="ON" />Cebolla<br>
+                        </td>
+                        <td>
+                            <input type="radio" name="tamaño" value="" />Pequeña<br>
+                            <input type="radio" name="tamaño" value="" checked="checked" />Mediana<br>
+                            <input type="radio" name="tamaño" value="" />Grande<br>
+                        </td>
+                        <td>
+                            <select name="formapago">
+                                <option selected>Visa</option>
+                                <option>Cheque</option>
+                                <option>Contado</option>
+                                <option>Metalico</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td colspan="3" bgcolor="#9E3114"><font color="white">Instrucciones Especiales</font></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="center">
+                            <textarea name="instruccionesesp" rows="7" cols="45">
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="center">
+                            <input type="submit" value="Enviar Pedido" />
+                            <input type="reset" value="Borrar Formulario" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </form>
+    </body>
+</html>
