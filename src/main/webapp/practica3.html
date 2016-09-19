@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="mailto:videoclub@gmail.com" method="POST">
+            <table border="0" width="50%" bgcolor="#FFFFD4">
+                <thead>
+                    <tr>
+                        <th bgcolor="#FFCE57" colspan="5" align="left"><b>VIDEOCLUB ON-LINE</b></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td bgcolor="#9D9933">Nombre Película</td>
+                        <td><input type="text" name="nompelicula" value="" /></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#9D9933">Número Días Alquiler</td>
+                        <td><input type="text" name="diasalquiler" value="1" /></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td bgcolor="#9D9933" width="100px">Edad Cliente</td>
+                        <td bgcolor="#9D9933" width="140px">Forma De Pago</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="radio" name="edad" value="1" />Menor de 7 años<br>
+                            <input type="radio" name="edad" value="2" />Menor de 14 años <br>
+                            <input type="radio" name="edad" value="3" />Menor de 18 años<br>
+                            <input type="radio" name="edad" value="4" />Mayor de 18 años<br>
+                        </td>
+                        <td><select name="formapago">
+                                <option selected>VISA</option>
+                                <option>Master Card</option>
+                                <option>Efectivo</option>
+                            </select></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td bgcolor="#9D9933" colspan="2">Especificaciones extras</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td colspan="4"><textarea  name="especificaciones" rows="10" cols="85">
+                            </textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td colspan="4" align="center"><input type="submit" value="Enviar pedido" />
+                            <input type="submit" value="Borrar Formulario" /></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </form>
+    </body>
+</html>
