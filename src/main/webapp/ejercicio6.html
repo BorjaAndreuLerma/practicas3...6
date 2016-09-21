@@ -10,48 +10,106 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-        <form name="electro" action="mailto:electrodomesticos@gmail.com" method="POST">
-            <table border="1">
+    <body style="background-image:url(imagenes/fondo.png); background-repeat: no-repeat;">
+        <form name="electro" action="mailto:electrodomesticos@gmail.com" method="POST" style="margin-left:25%">
+            <table border="0" style="border-spacing:10px">
                 <thead>
                     <tr>
-                        <th colspan="5" align="center"><h2>Electrodomésticos</h2></th>
+                        <th colspan="4" align="center"><h1>Electrodomésticos</h1></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
+                        <td><h3>Television</h3></td>
+                        <td><h3>Cadena de Musica</h3></td>
+                        <td><h3>Frigorifico</h3></td>
+                        <td><h3>Vitroceramica</h3></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="productos" value="ON" />
+                            <br>
+                            <img alt="Television" src="imagenes/tv.png" width="200" height="200">                            
+                        </td>
+                        <td>
+                            <input type="checkbox" name="productos" value="ON" />
+                            <br>                            
+                            <img alt="Cadena de Musica" src="imagenes/cadena.png" width="200" height="200">                            
+                        </td>
+                        <td>
+                            <input type="checkbox" name="productos" value="ON" />
+                            <br>
+                            <img alt="Frigorifico" src="imagenes/frigorifico.png" width="200" height="200">                            
+                        </td>
+                        <td>                            
+                            <input type="checkbox" name="productos" value="ON" />
+                            <br>
+                            <img alt="Vitroceramica" src="imagenes/vitroceramica.png" width="200" height="200">
+                        </td>
+                    </tr>
+                    <tr style="text-align:center">
                         <td></td>
+                        <td>Forma de pago</td>
+                        <td>
+                            <select name="formaspago">
+                                <option selected>VISA</option>
+                                <option>Contado</option>
+                                <option>Cheque</option>
+                            </select>
+                        </td>
                         <td></td>
-                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="pedido" value="" onchange="document.getElementById('oculto').style.visibility='hidden'"/>
+                            Recojer producto en tienda.
+                        </td>
+                        <td>
+                            <input type="radio" name="pedido" value="" onchange="document.getElementById('oculto').style.visibility='visible'"/>
+                            Enviar producto a casa.
+                        </td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td colspan="4">
+                            Especificaciones:<br>
+                            <textarea name="especificaciones" rows="5" cols="70">
+                            </textarea>
+                        </td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>
+                            Nombre:<br>
+                            <input type="text" name="nombre" value="" style="border-left:0; border-right:0; border-top:0; border-bottom-color:black; background-color:#B9D1D5"/>
+                        </td>
+                        <td>
+                            Apellidos:<br>
+                            <input type="text" name="apellidos" value="" style="border-left:0; border-right:0; border-top:0; border-bottom-color:black; background-color:#B9D1D5"/>
+                        </td>
+                        <td>
+                            DNI:<br>
+                            <input type="text" name="dni" value="" style="border-left:0; border-right:0; border-top:0; border-bottom-color:black; background-color:#B9D1D5"/>
+                        </td>
+                        <td>
+                            Telefono:<br>
+                            <input type="text" name="telefono" value="" style="border-left:0; border-right:0; border-top:0; border-bottom-color:black; background-color:#B9D1D5"/>
+                        </td>
                     </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                    <tr id="oculto" style="visibility:hidden">
+                        <td>
+                            Direccion:<br>
+                            <input type="text" name="direccion" value="" style="border-left:0; border-right:0; border-top:0; border-bottom-color:black; background-color:#AAC6CA" />
+                        </td>
                     </tr>
-                    <tr>
+                    <tr style="text-align:center">
                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>
+                            <input type="submit" value="Enviar Pedido" />
+                        </td>
+                        <td>
+                            <input type="reset" value="Borrar Formulario" />
+                        </td>
                         <td></td>
                     </tr>
                 </tbody>
